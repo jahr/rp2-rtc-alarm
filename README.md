@@ -43,4 +43,3 @@ def rtcalarm_callback():
 ra.set_alarm((-1, -1, -1, -1, -1, -1, 0), rtcalarm_callback)
 ```
 
-(use of `mp.schedule` is probably not necessary, as the callback is already scheduled in the C code)
