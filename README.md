@@ -3,7 +3,7 @@
 
 
 This module gives access to Pico SDK's RTC Alarm functions. It is tested only on RP2040.
-it's tested on Pico W with MicroPython v1.26.0-preview.524 with Pico-SDK 2.1.1
+It's tested on Pico W with MicroPython v1.26.0-preview.524 with Pico-SDK 2.1.1
 
 >Build:
 
@@ -18,7 +18,6 @@ make BOARD=RPI_PICO_W USER_C_MODULES=../../../rp2-rtc-alarm/rp2_rtc_alarm.cmake
 In the micropython the module rtcalarm is available and has following functions:
 
 ```
-set_alarm() - 
 enable_alarm(datetime, callback) - starts alarm. datetime is tuple with 8 integers (the last one is ignored), callback is function with no arguments
 disable_alarm() - stops alarm
 ```
